@@ -9,31 +9,65 @@
     <title>Bem-vindo</title>
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-grid.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./css/bemvindo.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <style>
+      body {
+        background: rgb(199, 139, 51);
+        background: linear-gradient(
+          21deg,
+          rgba(199, 139, 51, 1) 10%,
+          rgba(224, 160, 58, 1) 36%,
+          rgba(255, 77, 77, 1) 68%,
+          rgba(190, 88, 88, 1) 100%
+        );
+        color: gray;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg" id="teste1">
+        <a href="../index.html"><h1 class="navbar-brand">Seila</h1></a>
+        <div id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/about.html">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contact.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row">
         <div class="caixaBemVindo">
           <div class="bemvindo">
-            <h1>Seja Bem-Vindo</h1>
+            <h1>O pior Ecommerce que já existiu!!</h1>
             <hr />
-            <p>Clique abaixo para ser redirecionado(a) para o projeto!</p>
+            <p>Seja bem-vindo à nossa loja especializada em produtos excepcionalmente defeituosos, completamente inúteis e notoriamente ruins. Aqui, nossa missão é oferecer uma seleção única de itens que são tão ineficazes e problemáticos que você pode até se perguntar como eles chegaram à prateleira. Prepare-se para uma experiência de compras verdadeiramente extraordinária, onde o valor reside na peculiaridade de nossa coleção. Explore nosso estoque e descubra produtos que desafiam todas as expectativas.</p>
             <div class="botaoBemVindo">
-              <a href="./pages/homepage.html"><button>Clique Aqui</button></a>
-            </div>
-            <p>ou</p>
-            <p>
-              Desca a pagina para ver a lista dos integrantes e as instruções
-            </p>
+              <a href="./pages/homepage.html"><button>Destrua sua vida! Clique me :)</button></a>
+            </div>     
           </div>
         </div>
       </div>
 
       <div class="caixaInstruInt">
-        <div class="row justify-content-center">
+        <div class="row">
           <div class="col">
             <div class="caixaInstru">
               <div class="InInstru">
