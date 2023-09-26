@@ -66,6 +66,14 @@
   }
 }
 
+img {
+  width: 50%;
+}
+
+body {
+  background-color: #232425;
+}
+
 .container {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -75,6 +83,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.carousel-inner img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .carousel-control-next-icon {
@@ -188,22 +210,7 @@ h4 {
   margin: 20px;
 }
 
-
-
-img {
-  width: 50%;
-}
-
-body {
-  background-color: #232425;
-}
-
-.carousel-inner img {
-  width: 100vh;
-}
-
 /* Estilos para a barra de navegação */
-
 .nav-link:hover {
   transition: 0.5s ease-in-out;
   color: coral;
@@ -215,7 +222,16 @@ header a {
   text-decoration: none;
 }
 
+header {
+  position: relative;
+}
+
 .navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     21deg,
