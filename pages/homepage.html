@@ -12,9 +12,12 @@
     <style>
       .container {
         background-color: #fff;
-        padding: 20px;
+        padding: 70px;
         border-radius: 5px;
         margin-top: 150px;
+      }
+      .navbar {
+        position: static;
       }
     </style>
   </head>
@@ -45,6 +48,15 @@
     <div class="container">
       <h1>Produtos</h1>
       <p>Temos os piores produtos, não compre!</p>
+      <div id="modalCompra" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Menu de Compra</h2>
+          <p>Selecione a quantidade desejada:</p>
+          <input type="number" id="quantidade" value="1" min="1" />
+          <button id="adicionarCarrinho">Adicionar ao Carrinho</button>
+        </div>
+      </div>
 
       <section
         id="carouselExampleControls"
@@ -53,28 +65,68 @@
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <figcaption><h3>Celular quebrado</h3></figcaption>
+            <p>
+              Este celular já passou por aventuras incríveis. Ele sobreviveu a
+              quedas dramáticas e encontros emocionantes com o chão. Não se
+              trata apenas de um celular, é uma obra-prima do design destruído.
+              Você não encontrará um celular igual a este em lugar algum, porque
+              cada rachadura, amassado e tela estilhaçada é única! Este celular
+              quebrado é a maneira perfeita de mostrar ao mundo que você não se
+              importa com convenções. Você é ousado, corajoso e nada o deterá.
+            </p>
+            <p>Além disso, economizar dinheiro é superestimado, certo?</p>
+            <button data-id="celular quebrado">Comprar</button>
             <figure>
               <img src="../img/1.jpg" class="d-block w-100" alt="Produto 1" />
-              <button>Comprar</button>
-              <figcaption>Descrição 1</figcaption>
             </figure>
           </div>
           <div class="carousel-item">
+            <figcaption><h3>Guarda-chuva para sapatos</h3></figcaption>
+            <p>
+              Este produto revolucionário é a resposta para todas as suas
+              preocupações com sapatos em dias chuvosos. Imagine-se andando pela
+              rua, sentindo-se como uma pessoa comum, com seus sapatos
+              vulneráveis à ameaça constante de gotas de água inesperadas.
+              Agora, graças ao "guarda-chuva para sapatos", você pode finalmente
+              estar um passo à frente (literalmente) da Mãe Natureza.
+            </p>
+            <button data-id="Shoe Umbrella">Comprar</button>
             <figure>
               <img src="../img/2.jpg" class="d-block w-100" alt="Produto 2" />
-              <figcaption>Descrição 2</figcaption>
-              <button>Comprar</button>
             </figure>
           </div>
           <div class="carousel-item">
+            <figcaption><h3>Caneca antiga</h3></figcaption>
+            <p>
+              Uma caneca que já viveu décadas de emoções, aventuras e, claro,
+              inúmeras xícaras de café. Este não é apenas um pedaço de cerâmica
+              velha, é uma verdadeira relíquia que vai deixar qualquer museu com
+              inveja.
+            </p>
+            <p>Adquira esta caneca antiga e transforme sua rotina matinal em uma jornada no tempo. Porque quando se trata de escolher uma caneca, o mais antigo é sempre melhor... ou não!"</p>
+            <button data-id="caneca antiga">Comprar</button>
             <figure>
-              <img
-                src="../img/3.jpg" 
-                class="d-block w-100"
-                alt="Produto 3"
-              />
-              <figcaption>Descrição 3</figcaption>
-              <button>Comprar</button>
+              <img src="../img/3.jpg" class="d-block w-100" alt="Produto 3" />
+            </figure>
+          </div>
+          <div class="carousel-item">
+            <figcaption><h3>Ventilador para macarrão</h3></figcaption>
+            <p>
+              Ah, o famoso "ventilador de macarrão", um dispositivo
+              revolucionário que promete resolver o dilema mais premente da
+              culinária: como esfriar seu macarrão de forma rápida e eficaz.
+              Porque, vamos encarar a verdade, quem tem tempo para esperar
+              pacientemente que o macarrão esfrie?
+            </p>
+            <p>
+              Então, se você está cansado de esperar 10 segundos pela
+              temperatura do seu macarrão abaixar, o ventilador de macarrão é o
+              seu sonho tornado realidade.
+            </p>
+            <button data-id="Ventilador para macarrão">Comprar</button>
+            <figure>
+              <img src="../img/4.jpg" class="d-block w-100" alt="Produto 2" />
             </figure>
           </div>
         </div>
@@ -103,6 +155,7 @@
     <footer>
       <p>&copy; 2023 Trash Market. Todos os direitos reservados.</p>
     </footer>
+
     <script src="../js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
