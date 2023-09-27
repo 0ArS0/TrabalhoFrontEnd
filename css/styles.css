@@ -1,10 +1,8 @@
 * {
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: cursive;
 }
-
 @media (min-width: 1024px) {
   .caixaInstruInt {
     display: grid;
@@ -66,36 +64,53 @@
   }
 }
 
-img {
-  width: 50%;
-}
-
 body {
-  background-color: #232425;
+  background: rgb(199, 139, 51);
+  background: linear-gradient(
+    21deg,
+    rgba(199, 139, 51, 1) 10%,
+    rgba(224, 160, 58, 1) 36%,
+    rgba(255, 77, 77, 1) 68%,
+    rgba(190, 88, 88, 1) 100%
+  );
 }
 
-.container {
-  margin-top: 40px;
-  margin-bottom: 40px;
+footer {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    21deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(52, 52, 52, 1) 19%,
+    rgba(68, 68, 68, 1) 39%,
+    rgba(68, 68, 68, 1) 58%,
+    rgba(42, 42, 42, 1) 76%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  margin-top: 100px;
+  margin-bottom: -16px;
+  text-align: center;
+  color: white;
 }
 
-#teste1 {
+.container{
+  width: 70%;
+  height: 100%;
+}
+
+#cabecalho {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .carousel-inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  text-align: center;
+  height: 100vh;
 }
 
 .carousel-inner img {
-  display: inline-block;
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
   margin: 0 auto;
 }
 
@@ -119,12 +134,15 @@ body {
   font-size: 40px;
 }
 
+.navbar span {
+  color: coral;
+}
+
 .caixaBemVindo {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-bottom: 100px;
 }
 
 .caixaBemVindo .bemvindo {
@@ -134,32 +152,21 @@ body {
   border-radius: 30px;
   padding: 25px;
   transition: 0.7s ease-in-out;
-  box-shadow: 0px 0px 10px black;
   color: white;
 }
 
 .caixaBemVindo .bemvindo:hover {
-  background-color: rgba(243, 245, 248, 0.5);
   transform: scale(1.05);
   transition: 0.7s ease-in-out;
-  box-shadow: 0px 0px 10px white;
 }
 
 .caixaInstruInt .caixaInstru {
   text-shadow: 0px 0px 4px black;
   font-size: 20px;
   transition: 0.7s ease-in-out;
-  box-shadow: 0px 0px 10px black;
   border-radius: 30px;
   color: white;
   padding: 20px;
-}
-
-.caixaInstruInt .caixaInstru:hover {
-  transform: scale(1.05);
-  transition: 0.7s ease-in-out;
-  box-shadow: 0px 0px 10px white;
-  background-color: rgba(243, 245, 248, 0.5);
 }
 
 .caixaInstruInt .caixaInt {
@@ -167,17 +174,13 @@ body {
   font-size: 20px;
   color: white;
   transition: 0.7s ease-in-out;
-  box-shadow: 0px 0px 10px black;
   border-radius: 30px;
   padding: 20px;
-  background-color: rgba(243, 245, 248, 0.144);
 }
 
 .caixaInstruInt .caixaInt:hover {
   transform: scale(1.05);
   transition: 0.7s ease-in-out;
-  box-shadow: 0px 0px 10px white;
-  background-color: rgba(243, 245, 248, 0.5);
 }
 
 .caixaBemVindo .bemvindo .botaoBemVindo button {
@@ -217,11 +220,13 @@ h4 {
 }
 
 header a {
-  font-family: "Croissant One", cursive;
   font-size: 20px;
   text-decoration: none;
 }
 
+header a {
+  text-shadow: 0px 0px 8px white;
+}
 header {
   position: relative;
 }
@@ -290,14 +295,11 @@ header {
   transform: scale(1.05);
 }
 
-button {
+.container button {
   background-color: #d15555c2;
   color: #fff;
+  z-index: 10000;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
 }
