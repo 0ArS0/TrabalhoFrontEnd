@@ -15,14 +15,14 @@
         padding: 20px;
         border-radius: 5px;
         margin-top: 150px;
+        flex-direction: column;
       }
-     
     </style>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg" id="cabecalho">
-        <a class="nav-link" href="../index.html"
+        <a href="../index.html"
           ><h1 class="navbar-brand">Trash Market</h1></a
         >
         <div id="navbarNav">
@@ -48,7 +48,7 @@
 
     <div class="container">
       <h1>Entre em Contato</h1>
-      <form>
+      <form action="#" method="post" class="form was-validated">
         <div class="form-group">
           <div class="my-3 col-sm-12 col-md-12">
             <label for="nome" class="form-label">Nome:</label>
@@ -70,6 +70,7 @@
               id="telefone"
               class="form-control"
               name="telefone"
+              required="true"
               placeholder="Seu telefone"
             />
           </div>
@@ -94,26 +95,32 @@
               class="form-control"
               id="mensagem"
               rows="6"
+              required="true"
               placeholder="Deixe a sua mensagem"
             ></textarea>
           </div>
         </div>
+        <input type="submit" value="Enviar" class="btn btn-primary" />
       </form>
     </div>
 
     <div class="container mt-4" id="contato">
       <h2>Nos siga nas redes sociais:</h2>
-      <p>obs: nao temos redes sociais, por que ninguem compra nada aqui, ent to nem ai tbm</p>
       <a
-        href="https://www.linkedin.com/company/serratecoficial/" target="_blank"
+        href="https://www.linkedin.com/company/serratecoficial/"
+        target="_blank"
         class="btn btn-primary"
         >LinkedIn</a
       >
-      <a href="https://github.com/0ArS0/TrabalhoFrontEnd" target="_blank" class="btn btn-info"
+      <a
+        href="https://github.com/0ArS0/TrabalhoFrontEnd"
+        target="_blank"
+        class="btn btn-info"
         >GitHub</a
       >
       <a
-        href="https://www.instagram.com/serratecoficial/" target="_blank"
+        href="https://www.instagram.com/serratecoficial/"
+        target="_blank"
         class="btn btn-danger"
         >Instagram</a
       >

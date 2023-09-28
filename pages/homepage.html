@@ -16,17 +16,12 @@
         border-radius: 5px;
         margin-top: 150px;
       }
-      .navbar {
-        position: static;
-      }
     </style>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg" id="cabecalho">
-        <a class="nav-link" href="../index.html"
-          ><h1 class="navbar-brand">Trash Market</h1></a
-        >
+        <a href="../index.html"><h1 class="navbar-brand">Trash Market</h1></a>
         <div id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -48,16 +43,19 @@
       </nav>
     </header>
 
-    <div class="container">
-      <h1>Produtos</h1>
-      <p>Temos os piores produtos, não compre!</p>
-      <div id="modalCompra" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2>Menu de Compra</h2>
-          <p>Selecione a quantidade desejada:</p>
-          <input type="number" id="quantidade" value="1" min="1" />
-          <button id="adicionarCarrinho">Adicionar ao Carrinho</button>
+    <div class="container mt-4">
+      <div>
+        <h1>Produtos</h1>
+        <p>Temos os piores produtos, não compre!</p>
+        <hr />
+        <div id="modalCompra" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Menu de Compra</h2>
+            <p>Selecione a quantidade desejada:</p>
+            <input type="number" id="quantidade" value="1" min="1" />
+            <button id="adicionarCarrinho">Adicionar ao Carrinho</button>
+          </div>
         </div>
       </div>
 
@@ -69,6 +67,9 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <figcaption><h3>Celular quebrado</h3></figcaption>
+            <span style="font-weight: 600; font-size: 18px"
+              ><p>R$ 119.99</p></span
+            >
             <p>
               Este celular já passou por aventuras incríveis. Ele sobreviveu a
               quedas dramáticas e encontros emocionantes com o chão. Não se
@@ -81,11 +82,14 @@
             <p>Além disso, economizar dinheiro é superestimado, certo?</p>
             <button data-id="celular quebrado">Comprar</button>
             <figure>
-              <img src="../img/1.jpg" class="d-block w-100" alt="Produto 1" />
+              <img src="../img/1.jpg" alt="Produto 1" />
             </figure>
           </div>
           <div class="carousel-item">
             <figcaption><h3>Guarda-chuva para sapatos</h3></figcaption>
+            <span style="font-weight: 600; font-size: 18px"
+              ><p>R$ 49.99</p></span
+            >
             <p>
               Este produto revolucionário é a resposta para todas as suas
               preocupações com sapatos em dias chuvosos. Imagine-se andando pela
@@ -96,25 +100,35 @@
             </p>
             <button data-id="Shoe Umbrella">Comprar</button>
             <figure>
-              <img src="../img/2.jpg" class="d-block w-100" alt="Produto 2" />
+              <img src="../img/2.jpg" alt="Produto 2" />
             </figure>
           </div>
           <div class="carousel-item">
             <figcaption><h3>Caneca antiga</h3></figcaption>
+            <span style="font-weight: 600; font-size: 18px"
+              ><p>R$ 19.99</p></span
+            >
             <p>
               Uma caneca que já viveu décadas de emoções, aventuras e, claro,
               inúmeras xícaras de café. Este não é apenas um pedaço de cerâmica
               velha, é uma verdadeira relíquia que vai deixar qualquer museu com
               inveja.
             </p>
-            <p>Adquira esta caneca antiga e transforme sua rotina matinal em uma jornada no tempo. Porque quando se trata de escolher uma caneca, o mais antigo é sempre melhor... ou não!"</p>
+            <p>
+              Adquira esta caneca antiga e transforme sua rotina matinal em uma
+              jornada no tempo. Porque quando se trata de escolher uma caneca, o
+              mais antigo é sempre melhor... ou não!"
+            </p>
             <button data-id="caneca antiga">Comprar</button>
             <figure>
-              <img src="../img/3.jpg" class="d-block w-100" alt="Produto 3" />
+              <img src="../img/3.jpg" alt="Produto 3" />
             </figure>
           </div>
           <div class="carousel-item">
             <figcaption><h3>Ventilador para macarrão</h3></figcaption>
+            <span style="font-weight: 600; font-size: 18px"
+              ><p>R$ 89.99</p></span
+            >
             <p>
               Ah, o famoso "ventilador de macarrão", um dispositivo
               revolucionário que promete resolver o dilema mais premente da
@@ -129,7 +143,30 @@
             </p>
             <button data-id="Ventilador para macarrão">Comprar</button>
             <figure>
-              <img src="../img/4.jpg" class="d-block w-100" alt="Produto 2" />
+              <img src="../img/4.jpg" alt="Produto 4" />
+            </figure>
+          </div>
+          <div class="carousel-item">
+            <figcaption><h3>Colete para galinha</h3></figcaption>
+            <span style="font-weight: 600; font-size: 18px"
+              ><p>R$ 39.99</p></span
+            >
+            <p>
+              O acessório essencial que todos os proprietários de galinhas devem
+              ter para garantir que suas penosas estejam seguras e visíveis no
+              trânsito. Porque todos sabemos o quão vital é garantir que suas
+              galinhas estejam equipadas com equipamentos de segurança de alta
+              moda.
+            </p>
+            <p>
+              Então, não perca tempo. Adquira um "colete para galinha" hoje
+              mesmo e leve sua galinha para passear com estilo e segurança.
+              Porque quando se trata de moda e segurança avícolas, você nunca
+              pode exagerar demais!
+            </p>
+            <button data-id="Colete para galinha">Comprar</button>
+            <figure>
+              <img src="../img/5.jpg" alt="Produto 5" />
             </figure>
           </div>
         </div>

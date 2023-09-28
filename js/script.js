@@ -39,3 +39,5 @@ botoesComprar.forEach((botao) => {
 
 
 
+
+

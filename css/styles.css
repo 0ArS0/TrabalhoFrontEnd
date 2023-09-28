@@ -3,17 +3,6 @@
   box-sizing: border-box;
   font-family: cursive;
 }
-@media (min-width: 1024px) {
-  .caixaInstruInt {
-    display: grid;
-    grid-template-columns: 2fr 400px;
-  }
-
-  .caixaInt {
-    margin-top: 0;
-    margin-left: 40px;
-  }
-}
 
 @media (max-width: 1024px) {
   .caixaInt {
@@ -27,20 +16,11 @@
   }
 }
 
-@media (max-width: 454px) {
-  .caixaInstruInt .caixaInstru {
-    margin-top: 50px;
-  }
-}
-
 @media (max-width: 991.98px) {
   .navbar {
     display: flex !important;
     width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
-
   .navbar-nav {
     flex-direction: row;
   }
@@ -53,14 +33,27 @@
     display: flex !important;
     flex-direction: row;
     width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
 }
 
-@media (max-width: 288.98px) {
-  .navbar-nav {
-    flex-direction: column;
+@media (max-width: 4505060px) {
+  .caixaBemVindo {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 375.98px) {
+  .caixaBemVindo {
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .caixaBemVindo {
+    margin-top: 20rem;
+    margin-bottom: 20rem;
   }
 }
 
@@ -92,9 +85,28 @@ footer {
   color: white;
 }
 
-.container{
-  width: 70%;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   height: 100%;
+}
+#contato {
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 50px;
+}
+
+.container p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 20px;
+  text-align: center;
 }
 
 #cabecalho {
@@ -105,16 +117,16 @@ footer {
 
 .carousel-inner {
   text-align: center;
-  height: 100vh;
 }
 
 .carousel-inner img {
   max-width: 100%;
   max-height: 100%;
+  height: auto;
   margin: 0 auto;
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
   margin-top: 40%;
   width: 5%;
   height: 50%;
@@ -122,14 +134,13 @@ footer {
   box-shadow: 0px 0px 10px black;
 }
 
-.carousel-control-next{
+.carousel-control-next {
   margin-top: 40%;
   width: 5%;
   height: 50%;
   background-color: gray;
   box-shadow: 0px 0px 10px black;
 }
-
 
 .carousel-control-next-icon {
   background-image: url(../img/setaDireita.png);
@@ -147,14 +158,7 @@ footer {
   transform: scale(1.05);
 }
 
-.navbar-brand {
-  font-size: 40px;
-}
-
-.navbar span {
-  color: coral;
-}
-
+/* Estilos caixas pagina inicial*/
 .caixaBemVindo {
   display: flex;
   justify-content: center;
@@ -162,7 +166,7 @@ footer {
   height: 100vh;
 }
 
-.caixaBemVindo .bemvindo {
+.bemvindo {
   text-shadow: 0px 0px 4px black;
   font-size: 20px;
   text-align: center;
@@ -172,35 +176,29 @@ footer {
   color: white;
 }
 
-.caixaBemVindo .bemvindo:hover {
+.bemvindo:hover {
   transform: scale(1.05);
   transition: 0.7s ease-in-out;
 }
 
-.caixaInstruInt .caixaInstru {
+.caixaInstru {
   text-shadow: 0px 0px 4px black;
   font-size: 20px;
+  background-color: rgba(128, 128, 128, 0.164);
   transition: 0.7s ease-in-out;
   border-radius: 30px;
   color: white;
   padding: 20px;
 }
-
-.caixaInstruInt .caixaInt {
-  text-shadow: 0px 0px 4px black;
-  font-size: 20px;
-  color: white;
-  transition: 0.7s ease-in-out;
-  border-radius: 30px;
-  padding: 20px;
-}
-
-.caixaInstruInt .caixaInt:hover {
+.nomes:hover {
   transform: scale(1.05);
-  transition: 0.7s ease-in-out;
+  color: coral;
 }
 
-.caixaBemVindo .bemvindo .botaoBemVindo button {
+.form-group:hover{
+  transform: scale(1.01);
+}
+.botaoBemVindo button {
   border: 1px solid black;
   border-radius: 30px;
   margin-top: 30px;
@@ -212,48 +210,26 @@ footer {
   cursor: pointer;
 }
 
-.caixaBemVindo .bemvindo .botaoBemVindo button:hover {
+.botaoBemVindo button:hover {
   transform: scale(1.05);
   transition: 0.4s ease-in-out;
   box-shadow: 0px 0px 20px white;
   color: white;
 }
 
-.caixaBemVindo .bemvindo > h1 {
+.bemvindo > h1 {
   text-shadow: 0px 0px 10px black;
 }
 
-.caixaInstruInt .caixaInstru .InInstru p,
-h2,
-h3,
-h4 {
-  margin: 20px;
-}
-
 /* Estilos para a barra de navegação */
-.nav-link:hover {
-  transition: 0.5s ease-in-out;
-  color: coral;
-}
 
 header a {
   font-size: 20px;
   text-decoration: none;
-}
-
-header a {
   text-shadow: 0px 0px 8px white;
-}
-header {
-  position: relative;
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 100;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     21deg,
@@ -268,6 +244,18 @@ header {
   box-shadow: 4px 4px 14px black;
 }
 
+.nav-link:hover {
+  transition: 0.5s ease-in-out;
+  color: coral;
+}
+
+.navbar-brand {
+  font-size: 40px;
+}
+
+.navbar span {
+  color: coral;
+}
 .navbar a {
   margin: 0px 15px 0px 15px;
   color: white;
@@ -321,4 +309,11 @@ header {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.514);
 }
+
+.container button:hover {
+  background-color: green;
+  transform: scale(1.04);
+}
+

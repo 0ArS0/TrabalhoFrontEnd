@@ -15,14 +15,14 @@
         padding: 20px;
         border-radius: 5px;
         margin-top: 150px;
+        flex-direction: column;
       }
-     
     </style>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg" id="cabecalho">
-        <a class="nav-link" href="../index.html"
+        <a href="../index.html"
           ><h1 class="navbar-brand">Trash Market</h1></a
         >
         <div id="navbarNav">
@@ -34,98 +34,79 @@
               <a class="nav-link" href="../pages/about.html">Sobre nós</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/contact.html"
-                >Contato</a
-              >
+              <a class="nav-link" href="../pages/contact.html">Contato</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/cadastrar.html"><span>Cadastro</span></a>
-              
+              <a class="nav-link" href="../pages/cadastrar.html"
+                ><span>Cadastro</span></a
+              >
             </li>
-            
           </ul>
         </div>
       </nav>
     </header>
 
-    <main class="layout-assinatura">
-        <div class="container">
-          <h1 class="titulo-formulario">Cadastro de Cliente</h1>
-          <form action="#" method="post" class="form was-validated">
-            <div class="row">
-              <div class="my-3 col-sm-12 col-md-12">
-                <label for="nome" class="form-label">Nome:</label>
-                <input
-                  type="text"
-                  id="nome"
-                  class="form-control"
-                  name="nome"
-                  required="true"
-                  placeholder="Preencha o seu nome"
-                />
-              </div>
+      <div class="container">
+        <h1>Cadastro de Cliente</h1>
+        <form action="#" method="post" class="form was-validated">
+          <div class="form-group">
+            <div class="my-3 col-sm-12 col-md-12">
+              <label for="nome" class="form-label">Nome:</label>
+              <input
+                type="text"
+                id="nome"
+                class="form-control"
+                name="nome"
+                required="true"
+                placeholder="Preencha o seu nome"
+              />
             </div>
-            <div class="row">
-              <div class="my-3 col-sm-12 col-md-12">
-                <label for="email" class="form-label">Email:</label>
-                <input
-                  type="email"
-                  id="email"
-                  class="form-control"
-                  name="email"
-                  required="true"
-                  placeholder="Preencha o seu email"
-                />
-              </div>
+          </div>
+          <div class="form-group">
+            <div class="my-3 col-sm-12 col-md-12">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                name="email"
+                required="true"
+                placeholder="Preencha o seu email"
+              />
             </div>
-            <div class="row">
-              <div class="my-3 col-sm-12 col-md-12">
-                  <label for="senha" class="form-label"
-                    >Senha:</label
-                  >
-                  <input
-                    type="password"
-                    id="senha"
-                    class="form-control"
-                    name="senha"
-                    required="true"
-                    placeholder="Preencha a sua senha"
-                  />
-                </div>
+          </div>
+          <div class="form-group">
+            <div class="my-3 col-sm-12 col-md-12">
+              <label for="senha" class="form-label">Senha:</label>
+              <input
+                type="password"
+                id="senha"
+                class="form-control"
+                name="senha"
+                required="true"
+                placeholder="Preencha a sua senha"
+              />
             </div>
-            
-            <div class="row">
-              <div class="my-3 col-sm-3 col-md-3">
-                <label for="telefone" class="form-label">Telefone:</label>
-                <input
-                  type="tel"
-                  id="telefone"
-                  class="form-control"
-                  name="telefone"
-                  placeholder="Preencha o telefone"
-                />
-              </div>
-  
-             
-              <div class="my-3 col-sm-3 col-md-3">
-                  <label for="dataNascimento" class="form-label"
-                    >Data de Nascimento:</label
-                  >
-                  <input
-                    type="date"
-                    id="dataNascimento"
-                    class="form-control"
-                    name="dataNascimento"
-                  />
-                </div>
-                        
-            </div>
-            <input type="submit" value="Enviar" class="btn btn-primary">
-          </form>
-        </div>
-      </main>
+          </div>
 
-  
+          <div class="form-group">
+            <div class="my-3 col-sm-3 col-md-3">
+              <label for="dataNascimento" class="form-label"
+                >Data de Nascimento:</label
+              >
+              <input
+                type="date"
+                id="dataNascimento"
+                required="true"
+                class="form-control"
+                name="dataNascimento"
+              />
+            </div>
+          </div>
+          <input type="submit" value="Enviar" class="btn btn-primary" />
+        </form>
+      </div>
+
     <footer>
       <p>&copy; 2023 Trash Market. Todos os direitos reservados.</p>
     </footer>

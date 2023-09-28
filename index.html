@@ -23,12 +23,25 @@
           rgba(190, 88, 88, 1) 100%
         );
       }
+      header {
+        position: relative;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+      }
     </style>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg" id="cabecalho">
-        <a class="nav-link" href="../index.html"><h1 class="navbar-brand"><span>Trash Market</span></h1></a>
+        <a href="../index.html"
+          ><h1 class="navbar-brand"><span>Trash Market</span></h1></a
+        >
         <div id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -45,104 +58,98 @@
       </nav>
     </header>
 
-    <div class="container">
+    <div class="container mt-4">
       <div class="row">
         <div class="caixaBemVindo">
           <div class="bemvindo">
             <h1>O pior Ecommerce que já existiu!!</h1>
             <hr />
-            <p>Seja bem-vindo à nossa loja especializada em produtos excepcionalmente defeituosos, completamente inúteis e notoriamente ruins. Aqui, nossa missão é oferecer uma seleção única de itens que são tão ineficazes e problemáticos que você pode até se perguntar como eles chegaram à prateleira. Prepare-se para uma experiência de compras verdadeiramente extraordinária, onde o valor reside na peculiaridade de nossa coleção. Explore nosso estoque e descubra produtos que desafiam todas as suas expectativas e que com certeza lhe deixarão desapontado(a).</p>
+            <p>
+              Seja bem-vindo à nossa loja especializada em produtos
+              excepcionalmente defeituosos, completamente inúteis e notoriamente
+              ruins. Aqui, nossa missão é oferecer uma seleção única de itens
+              que são tão ineficazes e problemáticos que você pode até se
+              perguntar como eles chegaram à prateleira. Prepare-se para uma
+              experiência de compras verdadeiramente extraordinária, onde o
+              valor reside na peculiaridade de nossa coleção. Explore nosso
+              estoque e descubra produtos que desafiam todas as suas
+              expectativas e que com certeza lhe deixarão desapontado(a).
+            </p>
             <div class="botaoBemVindo">
-              <a href="./pages/homepage.html"><button>Clique aqui para acessar o Site</button></a>
-            </div>     
+              <a href="./pages/homepage.html"
+                ><button>Clique aqui para acessar o Site</button></a
+              >
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="caixaInstruInt">
+      <div class="container">
         <div class="row">
           <div class="col">
             <div class="caixaInstru">
-              <div class="InInstru">
-                <h2>
-                  Desenvolvimento de uma aplicação Web de tema livre utilizando
-                  HTML + CSS + Javascript
-                </h2>
-                <p>
-                  O trabalho consiste no desenvolvimento de uma aplicação Web
-                  utilizando as tecnologias apresentadas em sala de aula. O
-                  grupo poderá escolher qualquer tema para sua página Web como
-                  por exemplo um ecommerce, blog, site de notícias, ou até uma
-                  aplicação web com alguma funcionalidade específica. Entretanto
-                  alguns tópicos apresentados em sala deverão ser utilizados na
-                  construção do trabalho e algumas restrições serão passadas
-                  para que o trabalho seja aceito como completo.
-                </p>
-                <div>
-                  <h3>Requisitos mínimos gerais:</h3>
-                  <p>A página deve conter no mínimo a seguinte estrutura:</p>
+              <h2>
+                Desenvolvimento de uma aplicação Web de tema livre utilizando
+                HTML + CSS + Javascript
+              </h2>
+              <p>
+                O trabalho consiste no desenvolvimento de uma aplicação Web
+                utilizando as tecnologias apresentadas em sala de aula. O grupo
+                poderá escolher qualquer tema para sua página Web como por
+                exemplo um ecommerce, blog, site de notícias, ou até uma
+                aplicação web com alguma funcionalidade específica. Entretanto
+                alguns tópicos apresentados em sala deverão ser utilizados na
+                construção do trabalho e algumas restrições serão passadas para
+                que o trabalho seja aceito como completo.
+              </p>
+              <div>
+                <h3>Requisitos mínimos gerais:</h3>
+                <p>A página deve conter no mínimo a seguinte estrutura:</p>
+                <ul>
+                  <li>
+                    Uma homepage, apresentando o site ou a funcionalidade
+                    principal da plataforma
+                  </li>
+                  <li>Uma página de “Quem somos e o que fazemos” (About)</li>
+                  <li>
+                    Uma página de contato com algumas possíveis informações:
+                  </li>
                   <ul>
-                    <li>
-                      Uma homepage, apresentando o site ou a funcionalidade
-                      principal da plataforma
-                    </li>
-                    <li>Uma página de “Quem somos e o que fazemos” (About)</li>
-                    <li>
-                      Uma página de contato com algumas possíveis informações:
-                    </li>
-                    <ul>
-                      <li>Link para as redes sociais</li>
-                    </ul>
+                    <li>Link para as redes sociais</li>
                   </ul>
-                </div>
-                <div>
-                  <h3>Requisitos mínimas de funcionalidades:</h3>
-                  <p>
-                    A plataforma deve utilizar no mínimo as seguintes
-                    estruturas:
-                  </p>
-                  <ul>
-                    <li>Utilizar até dois componentes Bootstrap.</li>
-                    <li>Trabalhar com flexbox.</li>
-                    <li>Implementar uma apresentação em carrossel.</li>
-                    <li>Utilizar a barra de navegação</li>
-                    <li>Botões</li>
-                    <li>Formulários</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3>Responsividade</h3>
-                  <p>
-                    Pode ser feita utilizando o grid responsivo do bootstrap,
-                    media queries ou alguma outra técnica para tornar o site
-                    responsivo.
-                  </p>
-                  <ul>
-                    <li>
-                      Utilizar boas práticas para o desenvolvimento do projeto.
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h4>API</h4>
-                  <p>Consumir dados de alguma API da internet.</p>
-                </div>
+                </ul>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="caixaInt">
-              <h2>Integrantes - Grupo 5</h2>
-              <ul>
-                <li>ARTHUR DA SILVA MONTEIRO</li>
-                <li>BRENO DE SOUZA XAVIER</li>
-                <li>CARLOS ALBERTO MOREIRA</li>
-                <li>LUCAS DE OLIVEIRA</li>
-                <li>RODRIGO BERREDO LEAL</li>
-                <li>THOMAS VICTOR SANTOS</li>
-              </ul>
+              <div>
+                <h3>Requisitos mínimas de funcionalidades:</h3>
+                <p>
+                  A plataforma deve utilizar no mínimo as seguintes estruturas:
+                </p>
+                <ul>
+                  <li>Utilizar até dois componentes Bootstrap.</li>
+                  <li>Trabalhar com flexbox.</li>
+                  <li>Implementar uma apresentação em carrossel.</li>
+                  <li>Utilizar a barra de navegação</li>
+                  <li>Botões</li>
+                  <li>Formulários</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Responsividade</h3>
+                <p>
+                  Pode ser feita utilizando o grid responsivo do bootstrap,
+                  media queries ou alguma outra técnica para tornar o site
+                  responsivo.
+                </p>
+                <ul>
+                  <li>
+                    Utilizar boas práticas para o desenvolvimento do projeto.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4>API</h4>
+                <p>Consumir dados de alguma API da internet.</p>
+              </div>
             </div>
           </div>
         </div>
