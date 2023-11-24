@@ -41,7 +41,7 @@ botoesComprar.forEach((botao) => { // Isso itera sobre a lista de botões "Compr
   });
 });
 
- document.getElementById("contactForm").addEventListener("submit", function (event) {
+document.getElementById("contactForm").addEventListener("submit", function (event) {
   event.preventDefault();
   alert("Mensagem enviada com sucesso!");
 });
